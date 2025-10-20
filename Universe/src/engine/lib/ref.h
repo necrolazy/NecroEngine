@@ -1,8 +1,5 @@
 // Copyright: (C) 2022 Vyacheslav Smirnov. All rights reserved.
 
-#ifndef ENGINE_LIB_REF
-#define ENGINE_LIB_REF
-
 namespace engine
 {
     template <typename t>
@@ -47,5 +44,3 @@ namespace engine
         void (* const set) (t);
     };
 }
-
-#endif

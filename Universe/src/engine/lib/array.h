@@ -1,8 +1,5 @@
 // Copyright: (C) 2022 Vyacheslav Smirnov. All rights reserved.
 
-#ifndef ENGINE_LIB_ARRAY
-#define ENGINE_LIB_ARRAY
-
 namespace engine
 {
     template <typename t>
@@ -48,5 +45,3 @@ namespace engine
         t* const data;
     };
 }
-
-#endif

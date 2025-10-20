@@ -241,9 +241,6 @@
     <ClCompile Include="src\engine\render\settings.cpp">
       <Filter>src\engine\render</Filter>
     </ClCompile>
-    <ClCompile Include="src\engine\lib\sys.cpp">
-      <Filter>src\engine\lib</Filter>
-    </ClCompile>
     <ClCompile Include="src\engine\render\config.cpp">
       <Filter>src\engine\render</Filter>
     </ClCompile>
@@ -635,9 +632,6 @@
     </ClInclude>
     <ClInclude Include="src\engine\var\id.h">
       <Filter>src\engine\var</Filter>
-    </ClInclude>
-    <ClInclude Include="src\engine\lib\sys.h">
-      <Filter>src\engine\lib</Filter>
     </ClInclude>
     <ClInclude Include="src\engine\lib\array.h">
       <Filter>src\engine\lib</Filter>

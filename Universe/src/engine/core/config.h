@@ -1,6 +1,7 @@
 // Copyright: (C) 2022 Vyacheslav Smirnov. All rights reserved.
 
-#include "engine/def/obj.h"
+#include "def/obj.h"
+#include "lib/ref.h"
 
 namespace engine::core::config
 {

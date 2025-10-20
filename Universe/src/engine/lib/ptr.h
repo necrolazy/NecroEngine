@@ -2,9 +2,6 @@
 
 #include <utility>
 
-#ifndef ENGINE_LIB_PTR
-#define ENGINE_LIB_PTR
-
 namespace engine
 {
     template <typename t>
@@ -56,5 +53,3 @@ namespace engine
         t*  inst = nullptr;
     };
 }
-
-#endif
