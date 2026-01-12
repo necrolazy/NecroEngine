@@ -1,0 +1,18 @@
+// Copyright: (C) 2022 Vyacheslav Smirnov. All rights reserved.
+
+#include "def/platform.h"
+
+#include "render/vertices/obj_vertices.h"
+
+#include "var/array.h"
+#include "var/vertex.h"
+
+
+#ifdef windows
+
+#include <d3d11.h>
+#include <d3dx11.h>
+#include <d3dcompiler.h>
+#include <windows.h>
+
+#endif
