@@ -1,17 +1,661 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Исходные файлы">
+    <Filter Include="src">
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="Файлы заголовков">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    <Filter Include="src\core">
+      <UniqueIdentifier>{078330f8-9be0-4169-9e4b-505fc5e79c43}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Файлы ресурсов">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="src\core\control">
+      <UniqueIdentifier>{6bc13f4a-7073-43ee-bc01-a90b34a0b9ce}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\core\control\ipf">
+      <UniqueIdentifier>{ee70c777-7950-45cc-90e5-31832fd01cba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\event">
+      <UniqueIdentifier>{35e3bce3-fe8b-4c4e-88e5-14f43df838df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\event\ipf">
+      <UniqueIdentifier>{d11c14a8-6747-4c3e-b93f-b8271aa01e27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\event\win32">
+      <UniqueIdentifier>{b459037e-df98-45de-8248-758d63c247db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\event\win32\ipf">
+      <UniqueIdentifier>{d508a19a-ade1-446c-bc5b-a34024ab546f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\settings">
+      <UniqueIdentifier>{24dbaa7e-0afa-45d5-abdd-5524e162f272}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\settings\ipf">
+      <UniqueIdentifier>{d863bce2-f410-49e9-83b7-d5c2f9c552ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\view">
+      <UniqueIdentifier>{9ca5c346-4b6c-4690-8aac-12b3c98f5186}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\view\ipf">
+      <UniqueIdentifier>{b73ebc05-b260-4a75-ae9d-b9504c91ce14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\view\win32">
+      <UniqueIdentifier>{66d6b2a8-4a2a-4886-a4d2-5b854c24d8e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\view\win32\ipf">
+      <UniqueIdentifier>{d022975d-1a57-40cb-a154-c0157a7e8199}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\def">
+      <UniqueIdentifier>{590f2f67-5f95-45c0-8589-1a871f561c10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\lib">
+      <UniqueIdentifier>{ce10c722-e700-4746-b57e-27ca3fbc0aa9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\var">
+      <UniqueIdentifier>{23ec86b5-3840-430a-9d3d-b91bd4b16eb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\var\ipf">
+      <UniqueIdentifier>{25cd4fa0-7b27-4b34-9c49-3e42778c8d24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\sdk">
+      <UniqueIdentifier>{5164ea29-862d-4497-af9c-718d185e9371}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\sdk\directx">
+      <UniqueIdentifier>{a7050460-6083-4eb2-962f-33a3765a9c7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\render">
+      <UniqueIdentifier>{9df05d6c-5c95-488d-9dea-c0da06aadca8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\render\camera">
+      <UniqueIdentifier>{6e17ca17-e0bc-43f0-b53c-08e93fb83818}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\render\camera\ipf">
+      <UniqueIdentifier>{e714fd67-97f1-4683-9d8f-893df495df8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\render\device">
+      <UniqueIdentifier>{c297016c-1d10-4f93-b857-750025e770ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\render\font">
+      <UniqueIdentifier>{44d2ceca-7a2e-4033-bf20-c2b4616c3029}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\render\indices">
+      <UniqueIdentifier>{2e881702-e372-40af-a670-600ef12ca137}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\render\indices\ipf">
+      <UniqueIdentifier>{8e1a8fd0-0360-4333-83e5-d73bb7e940ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\render\indices\directx">
+      <UniqueIdentifier>{5a8ae707-8d56-471b-9481-d31e509e1ac0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\render\indices\directx\ipf">
+      <UniqueIdentifier>{7bae3934-e7eb-46d5-93e3-6a992d496f58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\render\ipf">
+      <UniqueIdentifier>{89478bfe-4628-42a5-a78d-e4dadecdc5e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\render\mesh">
+      <UniqueIdentifier>{0c71046b-8c30-46af-a312-84da4ac93490}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\render\mesh\ipf">
+      <UniqueIdentifier>{c5006a29-2911-4262-b19b-2f18ee23c366}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\render\model">
+      <UniqueIdentifier>{f0a51435-fd8d-4820-926e-ae8524520aa2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\render\model\ipf">
+      <UniqueIdentifier>{187f1982-50e8-4a16-a2ad-ceadf66c69c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\render\shader">
+      <UniqueIdentifier>{c6c5b0e6-82dd-402b-a19f-8cd9ebc4dbe6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\render\shader\directx">
+      <UniqueIdentifier>{bbdf92a5-8579-4481-ac1b-f0f706cec024}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\render\shader\directx\ipf">
+      <UniqueIdentifier>{4892a737-da25-45b0-b848-7481dddbb63d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\render\shader\ipf">
+      <UniqueIdentifier>{d0f48cbc-ff9f-406a-8e26-a8595dc51b3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\render\text">
+      <UniqueIdentifier>{b5c8e946-3e02-443d-9208-64a955c19402}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\render\vertices">
+      <UniqueIdentifier>{d0826cc0-36ec-4769-9e92-1cd9aa612009}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\render\vertices\ipf">
+      <UniqueIdentifier>{5a9b68e7-179e-434d-8180-0191bfc3a58b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\render\vertices\directx">
+      <UniqueIdentifier>{ae9c8239-2cae-4290-bc83-65027f612616}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\render\vertices\directx\ipf">
+      <UniqueIdentifier>{3ef96d26-cb41-4266-a2df-99021ab704b0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\core.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\config.cpp">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\control\api_control.cpp">
+      <Filter>src\core\control</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\event\api_event.cpp">
+      <Filter>src\core\event</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\event\win32\impl_event.cpp">
+      <Filter>src\core\event\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\settings\api_settings.cpp">
+      <Filter>src\core\settings</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\view\api_view.cpp">
+      <Filter>src\core\view</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\view\win32\impl_view.cpp">
+      <Filter>src\core\view\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\var\matrix4.cpp">
+      <Filter>src\var</Filter>
+    </ClCompile>
+    <ClCompile Include="src\var\string.cpp">
+      <Filter>src\var</Filter>
+    </ClCompile>
+    <ClCompile Include="src\var\vector3.cpp">
+      <Filter>src\var</Filter>
+    </ClCompile>
+    <ClCompile Include="src\var\vector4.cpp">
+      <Filter>src\var</Filter>
+    </ClCompile>
+    <ClCompile Include="src\var\vertex.cpp">
+      <Filter>src\var</Filter>
+    </ClCompile>
+    <ClCompile Include="src\var\error.cpp">
+      <Filter>src\var</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sdk\directx\device.cpp">
+      <Filter>src\sdk\directx</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sdk\directx\depth_stencil.cpp">
+      <Filter>src\sdk\directx</Filter>
+    </ClCompile>
+    <ClCompile Include="src\render\device.cpp">
+      <Filter>src\render</Filter>
+    </ClCompile>
+    <ClCompile Include="src\render\settings.cpp">
+      <Filter>src\render</Filter>
+    </ClCompile>
+    <ClCompile Include="src\render\api_render.cpp">
+      <Filter>src\render</Filter>
+    </ClCompile>
+    <ClCompile Include="src\render\config.cpp">
+      <Filter>src\render</Filter>
+    </ClCompile>
+    <ClCompile Include="src\render\camera\api_camera.cpp">
+      <Filter>src\render\camera</Filter>
+    </ClCompile>
+    <ClCompile Include="src\render\camera\impl_camera.cpp">
+      <Filter>src\render\camera</Filter>
+    </ClCompile>
+    <ClCompile Include="src\render\device\device_api.cpp">
+      <Filter>src\render\device</Filter>
+    </ClCompile>
+    <ClCompile Include="src\render\device\device_impl_directx.cpp">
+      <Filter>src\render\device</Filter>
+    </ClCompile>
+    <ClCompile Include="src\render\font\font_api.cpp">
+      <Filter>src\render\font</Filter>
+    </ClCompile>
+    <ClCompile Include="src\render\font\font_impl.cpp">
+      <Filter>src\render\font</Filter>
+    </ClCompile>
+    <ClCompile Include="src\render\indices\api_indices.cpp">
+      <Filter>src\render\indices</Filter>
+    </ClCompile>
+    <ClCompile Include="src\render\indices\directx\impl_indices.cpp">
+      <Filter>src\render\indices\directx</Filter>
+    </ClCompile>
+    <ClCompile Include="src\render\mesh\api_mesh.cpp">
+      <Filter>src\render\mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\render\mesh\impl_mesh.cpp">
+      <Filter>src\render\mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\render\model\api_model.cpp">
+      <Filter>src\render\model</Filter>
+    </ClCompile>
+    <ClCompile Include="src\render\model\impl_model.cpp">
+      <Filter>src\render\model</Filter>
+    </ClCompile>
+    <ClCompile Include="src\render\shader\api_shader.cpp">
+      <Filter>src\render\shader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\render\shader\directx\impl_shader.cpp">
+      <Filter>src\render\shader\directx</Filter>
+    </ClCompile>
+    <ClCompile Include="src\render\text\text_api.cpp">
+      <Filter>src\render\text</Filter>
+    </ClCompile>
+    <ClCompile Include="src\render\text\text_impl.cpp">
+      <Filter>src\render\text</Filter>
+    </ClCompile>
+    <ClCompile Include="src\render\vertices\api_vertices.cpp">
+      <Filter>src\render\vertices</Filter>
+    </ClCompile>
+    <ClCompile Include="src\render\vertices\directx\impl_vertices.cpp">
+      <Filter>src\render\vertices\directx</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\core.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\config.h">
+      <Filter>src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\control\api_control.h">
+      <Filter>src\core\control</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\control\ipf\iph_api_control.h">
+      <Filter>src\core\control\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\control\ipf\ips_api_control.h">
+      <Filter>src\core\control\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\event\api_event.h">
+      <Filter>src\core\event</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\event\obj_event.h">
+      <Filter>src\core\event</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\event\ipf\iph_api_event.h">
+      <Filter>src\core\event\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\event\ipf\iph_obj_event.h">
+      <Filter>src\core\event\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\event\ipf\ips_api_event.h">
+      <Filter>src\core\event\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\event\win32\impl_event.h">
+      <Filter>src\core\event\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\event\win32\ipf\iph_impl_event.h">
+      <Filter>src\core\event\win32\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\event\win32\ipf\ips_impl_event.h">
+      <Filter>src\core\event\win32\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\settings\api_settings.h">
+      <Filter>src\core\settings</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\settings\obj_settings.h">
+      <Filter>src\core\settings</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\settings\ipf\iph_api_settings.h">
+      <Filter>src\core\settings\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\settings\ipf\iph_obj_settings.h">
+      <Filter>src\core\settings\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\settings\ipf\ips_api_settings.h">
+      <Filter>src\core\settings\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\view\api_view.h">
+      <Filter>src\core\view</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\view\obj_view.h">
+      <Filter>src\core\view</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\view\ipf\iph_api_view.h">
+      <Filter>src\core\view\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\view\ipf\iph_obj_view.h">
+      <Filter>src\core\view\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\view\ipf\ips_api_view.h">
+      <Filter>src\core\view\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\view\win32\impl_view.h">
+      <Filter>src\core\view\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\view\win32\ipf\iph_impl_view.h">
+      <Filter>src\core\view\win32\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\view\win32\ipf\ips_impl_view.h">
+      <Filter>src\core\view\win32\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\def\abstract.h">
+      <Filter>src\def</Filter>
+    </ClInclude>
+    <ClInclude Include="src\def\impl.h">
+      <Filter>src\def</Filter>
+    </ClInclude>
+    <ClInclude Include="src\def\impl_def.h">
+      <Filter>src\def</Filter>
+    </ClInclude>
+    <ClInclude Include="src\def\obj.h">
+      <Filter>src\def</Filter>
+    </ClInclude>
+    <ClInclude Include="src\def\platform.h">
+      <Filter>src\def</Filter>
+    </ClInclude>
+    <ClInclude Include="src\def\set_def.h">
+      <Filter>src\def</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\array.h">
+      <Filter>src\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\ptr.h">
+      <Filter>src\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\ref.h">
+      <Filter>src\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\var\id.h">
+      <Filter>src\var</Filter>
+    </ClInclude>
+    <ClInclude Include="src\var\map.h">
+      <Filter>src\var</Filter>
+    </ClInclude>
+    <ClInclude Include="src\var\matrix4.h">
+      <Filter>src\var</Filter>
+    </ClInclude>
+    <ClInclude Include="src\var\ptr.h">
+      <Filter>src\var</Filter>
+    </ClInclude>
+    <ClInclude Include="src\var\queue.h">
+      <Filter>src\var</Filter>
+    </ClInclude>
+    <ClInclude Include="src\var\set.h">
+      <Filter>src\var</Filter>
+    </ClInclude>
+    <ClInclude Include="src\var\smart_ptr.h">
+      <Filter>src\var</Filter>
+    </ClInclude>
+    <ClInclude Include="src\var\sobj.h">
+      <Filter>src\var</Filter>
+    </ClInclude>
+    <ClInclude Include="src\var\std.h">
+      <Filter>src\var</Filter>
+    </ClInclude>
+    <ClInclude Include="src\var\string.h">
+      <Filter>src\var</Filter>
+    </ClInclude>
+    <ClInclude Include="src\var\vector.h">
+      <Filter>src\var</Filter>
+    </ClInclude>
+    <ClInclude Include="src\var\vector3.h">
+      <Filter>src\var</Filter>
+    </ClInclude>
+    <ClInclude Include="src\var\vector4.h">
+      <Filter>src\var</Filter>
+    </ClInclude>
+    <ClInclude Include="src\var\vertex.h">
+      <Filter>src\var</Filter>
+    </ClInclude>
+    <ClInclude Include="src\var\array.h">
+      <Filter>src\var</Filter>
+    </ClInclude>
+    <ClInclude Include="src\var\const.h">
+      <Filter>src\var</Filter>
+    </ClInclude>
+    <ClInclude Include="src\var\error.h">
+      <Filter>src\var</Filter>
+    </ClInclude>
+    <ClInclude Include="src\var\ipf\iph_std.h">
+      <Filter>src\var\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\var\ipf\iph_string.h">
+      <Filter>src\var\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\var\ipf\iph_vector.h">
+      <Filter>src\var\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\var\ipf\iph_vector3.h">
+      <Filter>src\var\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\var\ipf\iph_vector4.h">
+      <Filter>src\var\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\var\ipf\iph_vertex.h">
+      <Filter>src\var\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\var\ipf\ips_error.h">
+      <Filter>src\var\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\var\ipf\ips_matrix4.h">
+      <Filter>src\var\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\var\ipf\ips_string.h">
+      <Filter>src\var\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\var\ipf\ips_vector3.h">
+      <Filter>src\var\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\var\ipf\ips_vector4.h">
+      <Filter>src\var\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\var\ipf\ips_vertex.h">
+      <Filter>src\var\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\var\ipf\iph_array.h">
+      <Filter>src\var\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\var\ipf\iph_const.h">
+      <Filter>src\var\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\var\ipf\iph_error.h">
+      <Filter>src\var\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\var\ipf\iph_map.h">
+      <Filter>src\var\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\var\ipf\iph_matrix4.h">
+      <Filter>src\var\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\var\ipf\iph_smart_ptr.h">
+      <Filter>src\var\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sdk\directx\depth_stencil.h">
+      <Filter>src\sdk\directx</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sdk\directx\device.h">
+      <Filter>src\sdk\directx</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\config.h">
+      <Filter>src\render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\device.h">
+      <Filter>src\render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\settings.h">
+      <Filter>src\render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\api_render.h">
+      <Filter>src\render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\camera\api_camera.h">
+      <Filter>src\render\camera</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\camera\impl_camera.h">
+      <Filter>src\render\camera</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\camera\obj_camera.h">
+      <Filter>src\render\camera</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\camera\ipf\iph_api_camera.h">
+      <Filter>src\render\camera\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\camera\ipf\iph_impl_camera.h">
+      <Filter>src\render\camera\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\camera\ipf\iph_obj_camera.h">
+      <Filter>src\render\camera\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\camera\ipf\ips_api_camera.h">
+      <Filter>src\render\camera\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\camera\ipf\ips_impl_camera.h">
+      <Filter>src\render\camera\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\device\device_api.h">
+      <Filter>src\render\device</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\device\device_impl_directx.h">
+      <Filter>src\render\device</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\device\device_obj.h">
+      <Filter>src\render\device</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\font\font_api.h">
+      <Filter>src\render\font</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\font\font_impl.h">
+      <Filter>src\render\font</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\font\font_obj.h">
+      <Filter>src\render\font</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\indices\api_indices.h">
+      <Filter>src\render\indices</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\indices\obj_indices.h">
+      <Filter>src\render\indices</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\indices\ipf\iph_api_indices.h">
+      <Filter>src\render\indices\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\indices\ipf\iph_obj_indices.h">
+      <Filter>src\render\indices\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\indices\ipf\ips_api_indices.h">
+      <Filter>src\render\indices\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\indices\directx\impl_indices.h">
+      <Filter>src\render\indices\directx</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\indices\directx\ipf\iph_impl_indices.h">
+      <Filter>src\render\indices\directx\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\indices\directx\ipf\ips_impl_indices.h">
+      <Filter>src\render\indices\directx\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\ipf\iph_api_render.h">
+      <Filter>src\render\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\ipf\ips_api_render.h">
+      <Filter>src\render\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\mesh\api_mesh.h">
+      <Filter>src\render\mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\mesh\impl_mesh.h">
+      <Filter>src\render\mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\mesh\obj_mesh.h">
+      <Filter>src\render\mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\mesh\ipf\iph_api_mesh.h">
+      <Filter>src\render\mesh\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\mesh\ipf\iph_impl_mesh.h">
+      <Filter>src\render\mesh\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\mesh\ipf\iph_obj_mesh.h">
+      <Filter>src\render\mesh\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\mesh\ipf\ips_api_mesh.h">
+      <Filter>src\render\mesh\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\mesh\ipf\ips_impl_mesh.h">
+      <Filter>src\render\mesh\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\model\api_model.h">
+      <Filter>src\render\model</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\model\impl_model.h">
+      <Filter>src\render\model</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\model\obj_model.h">
+      <Filter>src\render\model</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\model\ipf\iph_api_model.h">
+      <Filter>src\render\model\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\model\ipf\iph_impl_model.h">
+      <Filter>src\render\model\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\model\ipf\iph_obj_model.h">
+      <Filter>src\render\model\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\model\ipf\ips_api_model.h">
+      <Filter>src\render\model\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\model\ipf\ips_impl_model.h">
+      <Filter>src\render\model\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\shader\api_shader.h">
+      <Filter>src\render\shader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\shader\obj_shader.h">
+      <Filter>src\render\shader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\shader\directx\impl_shader.h">
+      <Filter>src\render\shader\directx</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\shader\directx\ipf\iph_impl_shader.h">
+      <Filter>src\render\shader\directx\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\shader\directx\ipf\ips_impl_shader.h">
+      <Filter>src\render\shader\directx\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\shader\ipf\iph_api_shader.h">
+      <Filter>src\render\shader\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\shader\ipf\iph_obj_shader.h">
+      <Filter>src\render\shader\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\shader\ipf\ips_api_shader.h">
+      <Filter>src\render\shader\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\text\text_api.h">
+      <Filter>src\render\text</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\text\text_impl.h">
+      <Filter>src\render\text</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\text\text_obj.h">
+      <Filter>src\render\text</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\vertices\api_vertices.h">
+      <Filter>src\render\vertices</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\vertices\obj_vertices.h">
+      <Filter>src\render\vertices</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\vertices\ipf\iph_api_vertices.h">
+      <Filter>src\render\vertices\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\vertices\ipf\iph_obj_vertices.h">
+      <Filter>src\render\vertices\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\vertices\ipf\ips_api_vertices.h">
+      <Filter>src\render\vertices\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\vertices\directx\impl_vertices.h">
+      <Filter>src\render\vertices\directx</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\vertices\directx\ipf\iph_impl_vertices.h">
+      <Filter>src\render\vertices\directx\ipf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\vertices\directx\ipf\ips_impl_vertices.h">
+      <Filter>src\render\vertices\directx\ipf</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
