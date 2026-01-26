@@ -8,5 +8,14 @@ namespace engine::core::config
     class obj
     {
         obj_def
+
+        struct tt
+        {
+        //public:
+            ref<int> x;
+            ref<int> y;
+
+            ref<int> fps;
+        } render;
     };
 }
