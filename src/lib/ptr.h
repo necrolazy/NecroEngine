@@ -12,7 +12,7 @@ namespace engine
         {}
         ~ptr()
         {
-            delete inst;
+            //delete inst;
         }
 
         ptr(ptr&& src)      = delete;

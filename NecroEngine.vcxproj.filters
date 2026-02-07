@@ -657,5 +657,8 @@
     <ClInclude Include="src\render\vertices\directx\ipf\ips_impl_vertices.h">
       <Filter>src\render\vertices\directx\ipf</Filter>
     </ClInclude>
+    <ClInclude Include="src\lib\def.h">
+      <Filter>src\lib</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -215,6 +215,7 @@
     <ClInclude Include="src\def\platform.h" />
     <ClInclude Include="src\def\set_def.h" />
     <ClInclude Include="src\lib\array.h" />
+    <ClInclude Include="src\lib\def.h" />
     <ClInclude Include="src\lib\ptr.h" />
     <ClInclude Include="src\lib\ref.h" />
     <ClInclude Include="src\render\api_render.h" />

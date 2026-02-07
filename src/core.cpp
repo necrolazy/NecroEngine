@@ -12,6 +12,8 @@ namespace engine::core
 {
     int run(const char* config_path)
     {
+        config::obj config_inst;
+        
         settings::init();
         event::init();
         view::init();

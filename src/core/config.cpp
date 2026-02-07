@@ -55,11 +55,11 @@ namespace engine::core::config
             ref<int>(get_render_y, set_render_y) ,
             ref<int>(get_render_fps, set_render_fps) })
     {
-        //
+        impl_inst.init();
     }
     obj::~obj()
     {
-        //
+        impl_inst.term();
     }
 
     obj::obj(obj&& src) noexcept :
@@ -67,13 +67,13 @@ namespace engine::core::config
             ref<int>(get_render_y, set_render_y) ,
             ref<int>(get_render_fps, set_render_fps) })
     {
-        //
+        impl_inst.init();
     }
     obj::obj(const obj& src) noexcept :
         render({ ref<int>(get_render_x, set_render_x) ,
             ref<int>(get_render_y, set_render_y) ,
             ref<int>(get_render_fps, set_render_fps) })
     {
-        //
+        impl_inst.init();
     }
 }
