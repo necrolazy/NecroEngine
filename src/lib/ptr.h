@@ -12,7 +12,10 @@ namespace engine
         {}
         ~ptr()
         {
-            //delete inst;
+            if (inst)
+            {
+                delete inst;
+            }
         }
 
         ptr(ptr&& src)      = delete;
@@ -33,6 +36,7 @@ namespace engine
             if (refs == 0)
             {
                 delete inst;
+                inst = nullptr;
             }
         }
 
