@@ -348,7 +348,7 @@
     <ClInclude Include="src\def\set_def.h">
       <Filter>src\def</Filter>
     </ClInclude>
-    <ClInclude Include="src\lib\array.h">
+    <ClInclude Include="src\lib\arr.h">
       <Filter>src\lib</Filter>
     </ClInclude>
     <ClInclude Include="src\lib\ptr.h">
@@ -658,6 +658,9 @@
       <Filter>src\render\vertices\directx\ipf</Filter>
     </ClInclude>
     <ClInclude Include="src\lib\def.h">
+      <Filter>src\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\que.h">
       <Filter>src\lib</Filter>
     </ClInclude>
   </ItemGroup>

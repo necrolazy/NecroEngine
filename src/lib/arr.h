@@ -3,25 +3,25 @@
 namespace engine
 {
     template <typename t>
-    class array
+    class arr
     {
     public:
         const int size;
 
-        array(const int size) :
+        arr(const int size) :
             size(size),
             data(new t[static_cast<size_t>(size)])
         {}
-        ~array()
+        ~arr()
         {
             delete[] data;
         }
 
-        array(array&& src)      = delete;
-        array(const array& src) = delete;
+        arr(arr&& src)      = delete;
+        arr(const arr& src) = delete;
 
-        array& operator=(array&& src)      = delete;
-        array& operator=(const array& src) = delete;
+        arr& operator=(arr&& src)      = delete;
+        arr& operator=(const arr& src) = delete;
 
         t* operator*()
         {
