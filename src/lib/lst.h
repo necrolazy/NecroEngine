@@ -2,7 +2,7 @@
 
 namespace engine
 {
-    template <typename adt>
+    template <typename tpn>
     struct list
     {
         list()
@@ -17,15 +17,14 @@ namespace engine
         list& operator=(const list& src) = delete;
 
     private:
-        template <typename adt>
         struct item
         {
-            adt data;
-            item<adt>* next;
-            item<adt>* prev;
+            tpn data;
+            item* next;
+            item* prev;
         };
 
-        item<adt>* head;
-        item<adt>* tail;
+        item* head;
+        item* tail;
     };
 }
