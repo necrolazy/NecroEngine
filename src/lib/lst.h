@@ -2,26 +2,30 @@
 
 namespace engine
 {
-    template <typename t>
-    class lst
+    template <typename adt>
+    struct list
     {
-    public:
-        lst()
+        list()
         {}
-        ~lst()
+        ~list()
         {}
 
-        lst(lst&& src)      = delete;
-        lst(const lst& src) = delete;
+        list(lst&& src)      = delete;
+        list(const lst& src) = delete;
 
-        lst& operator=(lst&& src)      = delete;
-        lst& operator=(const lst& src) = delete;
+        list& operator=(list&& src)      = delete;
+        list& operator=(const list& src) = delete;
 
     private:
-        template <typename t>
-        struct itm
+        template <typename adt>
+        struct item
         {
-            //
+            adt data;
+            item<adt>* next;
+            item<adt>* prev;
         };
+
+        item<adt>* head;
+        item<adt>* tail;
     };
 }
