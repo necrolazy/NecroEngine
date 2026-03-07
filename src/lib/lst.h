@@ -10,8 +10,23 @@ namespace engine
         ~list()
         {}
 
-        list(lst&& src)      = delete;
-        list(const lst& src) = delete;
+        list(list&& src)      = delete;
+        list(const list& src) = delete;
+
+        void putf(tpn& val)
+        {}
+        void putb(tpn& val)
+        {}
+
+        tpn popf()
+        {}
+        tpn popb()
+        {}
+
+        tpn& getf()
+        {}
+        tpn& getb()
+        {}
 
         list& operator=(list&& src)      = delete;
         list& operator=(const list& src) = delete;
@@ -24,6 +39,7 @@ namespace engine
             item* prev;
         };
 
+        int size;
         item* head;
         item* tail;
     };
