@@ -663,5 +663,8 @@
     <ClInclude Include="src\lib\que.h">
       <Filter>src\lib</Filter>
     </ClInclude>
+    <ClInclude Include="src\lib\list.h">
+      <Filter>src\lib</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
