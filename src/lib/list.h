@@ -2,10 +2,10 @@
 
 namespace engine
 {
-    template <typename tpn>
+    template <typename t>
     struct list
     {
-        list(tpn& def)
+        list()
         {}
         ~list()
         {}
@@ -13,7 +13,7 @@ namespace engine
         list(list&& src)      = delete;
         list(const list& src) = delete;
 
-        void putf(tpn& val)
+        void putf(t& val)
         {
             size++;
             head->prev = new item
@@ -25,7 +25,7 @@ namespace engine
             tail->next = head->prev;
             head = head->prev;
         }
-        void putb(tpn& val)
+        void putb(t& val)
         {
             size++;
             tail->next = new item
@@ -38,9 +38,9 @@ namespace engine
             tail = tail->next;
         }
 
-        tpn popf()
+        t popf()
         {
-            tpn tmp = head->data;
+            t tmp = head->data;
             
             size--;
             head->prev = tail;
@@ -49,9 +49,9 @@ namespace engine
 
             return tmp;
         }
-        tpn popb()
+        t popb()
         {
-            tpn tmp = head->data;
+            t tmp = head->data;
 
             size--;
             head->prev = tail;
@@ -61,11 +61,11 @@ namespace engine
             return tmp;
         }
 
-        tpn& getf()
+        t& getf()
         {
             return &head->data;
         }
-        tpn& getb()
+        t& getb()
         {
             return &tail->data;
         }
@@ -76,7 +76,7 @@ namespace engine
     private:
         struct item
         {
-            tpn data;
+            t data;
             item* next;
             item* prev;
         };
