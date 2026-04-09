@@ -6,14 +6,35 @@ namespace engine
     struct list
     {
         list()
-        {}
+        {
+        }
         ~list()
-        {}
+        {
+        }
 
-        list(list&& src)      = delete;
+        list(list&& src) = delete;
         list(const list& src) = delete;
 
-        void putf(t& val)
+        t& operator[](const int index)
+        {
+            node* res = head;
+            for (int i = 0; i < (size + index % size) % size); i++)
+            {
+                res = res->next;
+            }
+            return res->data;
+        }
+        const t& operator[](const int index) const
+        {
+            node* res = head;
+            for (int i = 0; i < (size + index % size) % size); i++)
+            {
+                res = res->next;
+            }
+            return res->data;
+        }
+
+     /*   void putf(t& val)
         {
             size++;
             head->prev = new item
@@ -68,21 +89,21 @@ namespace engine
         t& getb()
         {
             return &tail->data;
-        }
+        }*/
 
         list& operator=(list&& src)      = delete;
         list& operator=(const list& src) = delete;
 
     private:
-        struct item
+        struct node
         {
             t data;
-            item* next;
-            item* prev;
+            node* next;
+            node* prev;
         };
 
         int size;
-        item* head;
-        item* tail;
+        node* head;
+        node* tail;
     };
 }
