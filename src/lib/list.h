@@ -15,10 +15,39 @@ namespace engine
         list(list&& src) = delete;
         list(const list& src) = delete;
 
+        list& operator(const int index)
+        {
+            item = (size + index % size) % size);
+            return &this;
+        }
+
+        list& operator<<(t& src)
+        {
+            node* res = head;
+            for (int i = 0; i < item; ++i)
+            {
+                res = res->next;
+            }
+            node* tmp = new node{
+                data : src,
+                next : res,
+                prev : res->prev
+            };
+            if (res->prev)
+            {
+                //
+            }
+            if (res->next)
+            {
+                //
+            }
+            return &this;
+        }
+
         t& operator[](const int index)
         {
             node* res = head;
-            for (int i = 0; i < (size + index % size) % size); i++)
+            for (int i = 0; i < (size + index % size) % size); ++i)
             {
                 res = res->next;
             }
@@ -27,7 +56,7 @@ namespace engine
         const t& operator[](const int index) const
         {
             node* res = head;
-            for (int i = 0; i < (size + index % size) % size); i++)
+            for (int i = 0; i < (size + index % size) % size); ++i)
             {
                 res = res->next;
             }
@@ -103,6 +132,7 @@ namespace engine
         };
 
         int size;
+        int item;
         node* head;
         node* tail;
     };
