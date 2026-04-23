@@ -24,23 +24,31 @@ namespace engine
         list& operator<<(t& src)
         {
             node* res = head;
-            for (int i = 0; i < item; ++i)
+            node* hgh = new node
             {
-                res = res->next;
-            }
-            node* tmp = new node{
-                data : src,
-                next : res,
-                prev : res->prev
+                .data = src,
+                .next = nullptr,
+                .prev = nullptr
             };
-            if (res->prev)
-            {
-                //
+            if (res) {
+                for (int i = 0; i < item; ++i)
+                {
+                    res = res->next;
+                }
+                if (res->prev)
+                {
+                    //
+                }
+                if (res->next)
+                {
+                    //
+                }
             }
-            if (res->next)
+            else
             {
-                //
+                head = hgh;
             }
+            
             return &this;
         }
 
