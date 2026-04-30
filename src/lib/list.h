@@ -15,41 +15,36 @@ namespace engine
         list(list&& src) = delete;
         list(const list& src) = delete;
 
-        list& operator(const int index)
+        void put(int index, t& data)
         {
-            item = (size + index % size) % size);
-            return &this;
-        }
-
-        list& operator<<(t& src)
-        {
-            node* res = head;
-            node* hgh = new node
+            if (head)
             {
-                .data = src,
-                .next = nullptr,
-                .prev = nullptr
-            };
-            if (res) {
-                for (int i = 0; i < item; ++i)
+                node* pos = head;
+                for (int i = 0; i < (size + index % size) % size); ++i)
                 {
-                    res = res->next;
+                    pos = pos->next;
                 }
-                if (res->prev)
+                pos->prev = new node
                 {
-                    //
-                }
-                if (res->next)
+                    .data = data,
+                    .next = pos,
+                    .prev = pos->prev
+                };
+                if (pos->prev->prev)
                 {
-                    //
+                    pos->prev->prev->next = pos->prev;
                 }
             }
             else
             {
-                head = hgh;
+                head = new node
+                {
+                    .data = data,
+                    .next = nullptr,
+                    .prev = nullptr
+                };
             }
-            
-            return &this;
+            size++;
         }
 
         t& operator[](const int index)
@@ -140,7 +135,6 @@ namespace engine
         };
 
         int size;
-        int item;
         node* head;
         node* tail;
     };
