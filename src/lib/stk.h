@@ -17,11 +17,26 @@ namespace engine
 
         void put(cn& data)
         {
-            //
+            size++;
+            head = new nd
+            {
+                .data = data,
+                .next = head
+            };
         }
         cn pop()
         {
-            //
+            cn rval = head->data;
+
+            if (size)
+            {
+                size--;
+                head = head->next;
+                delete tail->next;
+                tail->next = head;
+            }
+
+            return rval;
         }
 
         stk& operator=(stk&& src)      = delete;
