@@ -666,5 +666,8 @@
     <ClInclude Include="src\lib\list.h">
       <Filter>src\lib</Filter>
     </ClInclude>
+    <ClInclude Include="src\lib\stk.h">
+      <Filter>src\lib</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

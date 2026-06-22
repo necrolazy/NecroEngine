@@ -220,6 +220,7 @@
     <ClInclude Include="src\lib\ptr.h" />
     <ClInclude Include="src\lib\que.h" />
     <ClInclude Include="src\lib\ref.h" />
+    <ClInclude Include="src\lib\stk.h" />
     <ClInclude Include="src\render\api_render.h" />
     <ClInclude Include="src\render\camera\api_camera.h" />
     <ClInclude Include="src\render\camera\impl_camera.h" />
