@@ -2,9 +2,10 @@
 
 namespace engine
 {
-    template <typename gdt>
-    struct stk
+    template <typename t>
+    class stk
     {
+    public:
         stk()
         {}
         ~stk()
@@ -13,18 +14,18 @@ namespace engine
         stk(stk&& src)      = delete;
         stk(const stk& src) = delete;
 
-        void put(gdt& data)
+        void put(t& data)
         {
             size++;
-            head = new nd
+            head = new node
             {
                 .data = data,
                 .next = head
             };
         }
-        gdt pop()
+        t pop()
         {
-            gdt rval = head->data;
+            t rv = head->data;
 
             if (size)
             {
@@ -34,20 +35,20 @@ namespace engine
                 tail->next = head;
             }
 
-            return rval;
+            return rv;
         }
 
         stk& operator=(stk&& src)      = delete;
         stk& operator=(const stk& src) = delete;
 
     private:
-        struct item
+        struct node
         {
-            gdt data;
-            item* next;
+            t data;
+            node* next;
         };
 
         int size;
-        item* head;
+        node* head;
     };
 }
