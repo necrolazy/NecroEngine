@@ -6,6 +6,7 @@ namespace engine
     class stk
     {
     public:
+        /* ========================== */
         stk()
         {}
         ~stk()
@@ -14,6 +15,11 @@ namespace engine
         stk(stk&& src)      = delete;
         stk(const stk& src) = delete;
 
+        /* ========================== */
+        stk& operator=(stk&& src) = delete;
+        stk& operator=(const stk& src) = delete;
+
+        /* ========================== */
         void put(t& data)
         {
             size++;
@@ -37,9 +43,6 @@ namespace engine
 
             return rv;
         }
-
-        stk& operator=(stk&& src)      = delete;
-        stk& operator=(const stk& src) = delete;
 
     private:
         struct node
